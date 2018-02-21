@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<script src="angular.min.js"></script>
+<body style="background-color:#B3B6B7">
+<font face="ariel" color="green">
+<div ng-app="MyApp" ng-controller="Ctrl">
+ <p>Enter name:</p>
+<p>Name : <input type="text" ng-model="name" placeholder="Enter name here"></p>
+<p>Password : <input type="password" ng-model="name1" placeholder="Enter password here"></p>
+
+Username & Password:{{ fullName() }}
+</div>
+</font>
+<script>
+var app = angular.module("MyApp", []);
+app.controller("Ctrl", function($scope) {
+$scope.name="";
+$scope.name1="";
+$scope.fullName=function()
+{
+return $scope.name + " " + $scope.name1;  
+};
+});
+
+</script>
+</body>
+</html>

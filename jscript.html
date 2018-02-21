@@ -1,0 +1,59 @@
+<html>
+<script>
+function mf()
+{
+ var w=document.details.firstname.value;
+ document.getElementById('dfname').innerHTML=w;
+ document.getElementById('fname').style.display='none';
+ var x=document.details.lastname.value;
+ document.getElementById('dlname').innerHTML=x;
+ document.getElementById('lname').style.display='none';
+ var y=document.details.age.value;
+ document.getElementById('dage').innerHTML=y;
+ document.getElementById('lang').style.display='none';
+
+var z=document.details.text.value;
+ document.getElementById('dtext').innerHTML=z;
+ document.getElementById('t').style.display='none';
+
+
+}
+ 
+</script>
+<body>
+<body style="background-color:#5DADE2">
+<font color="#2C3E50">
+<center><h1>Form</h1></center>
+<form name=details>
+Username:<br>
+<input type="text" name="firstname" id="fname"><br>
+<p id="dfname"></p>
+Password:<br>
+<input type="password" name="lastname" id="lname"><br>
+<p id="dlname"></p>
+Age:<br>
+<input type="number" name="age" id="lang"><br>
+<p id="dage"></p>
+Gender:<br>
+<input type="radio" name="radio" id="r">Male<br>
+<p id="dmale"></p>
+<input type="radio" name="radio" id="r">Female<br><br>
+<p id="dfemale"></p>
+Department:<br>
+<input class="messageCheckbox" type="checkbox" name="it" id="i">IT<br>
+<p id="dit"></p>
+<input class="messageCheckbox" type="checkbox" name="it" id="c">CSE<br>
+<p id="dcse"></p>
+<input class="messageCheckbox" type="checkbox" name="it" id="e">EEE<br><br>
+<p id="deee"></p>
+
+Comment:<br>
+<textarea row="5" cols="60" name="text" id="t">
+
+</textarea><br><br>
+<p id="dtext"></p>
+<button type="button" onclick="mf()">Show</button>
+</font>
+</form>
+</body>
+</html>
